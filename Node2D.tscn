@@ -1,0 +1,139 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://boids.gd" type="Script" id=1]
+[ext_resource path="res://target.png" type="Texture" id=2]
+[ext_resource path="res://npc.png" type="Texture" id=3]
+[ext_resource path="res://boid.gd" type="Script" id=4]
+[ext_resource path="res://obj.png" type="Texture" id=5]
+[ext_resource path="res://obj.gd" type="Script" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 109.0
+margin/bottom = 20.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "START"
+flat = false
+
+[node name="Target" type="Sprite" parent="."]
+
+transform/pos = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="Boid1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 199.381, 89.8054 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 303.764, 79.5141 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 245.692, 131.706 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 223.639, 33.9384 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 152.335, 113.328 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 260.394, 92.0107 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 170.713, 141.997 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 184.68, 50.1104 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 272.891, 58.1964 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Boid10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 150.13, 78.779 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="StaticObj1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 417.532, 386.54 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 529.083, 377.017 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320.946, 383.819 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 501.876, 337.566 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 462.425, 300.836 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 413.451, 300.836 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[node name="StaticObj7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 367.199, 295.395 )
+texture = ExtResource( 5 )
+script/script = ExtResource( 6 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+
